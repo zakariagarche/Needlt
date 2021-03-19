@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>CountOverdueNeedItTasksAssignedTo</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+         var rightNow = new GlideDateTime();
+	
+	var overdueNITasks = new GlideRecord('x_591587_needit_needit');
+	overdueNITasks.addQuery('due_date','<=',rightNow);
+	overdueNITasks.addQuery('state','<',3);
+	overdueNITasks.addQuery('assigned_to',current.assigned_to);
+	
+	overdueNITasks.query();
+	
+	// Print to the Message field on a notification 
+	template.print("In addition to this overdue NeedIt Task, you have " + (overdueNITasks.getRowCount() - 1) + " more overdue NeedIt Tasks.");
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-11 11:09:13</sys_created_on>
+        <sys_id>9f858e46073220108002f48f7c1ed00b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CountOverdueNeedItTasksAssignedTo</sys_name>
+        <sys_package display_value="NeedIt 1" source="x_591587_needit">447b50e707ea20108002f48f7c1ed069</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt 1">447b50e707ea20108002f48f7c1ed069</sys_scope>
+        <sys_update_name>sys_script_email_9f858e46073220108002f48f7c1ed00b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-11 11:09:13</sys_updated_on>
+    </sys_script_email>
+</record_update>

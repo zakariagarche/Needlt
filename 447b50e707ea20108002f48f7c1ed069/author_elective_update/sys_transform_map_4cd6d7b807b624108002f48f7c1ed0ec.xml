@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="DELETE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>Import Historic NeedIt Data 1</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_591587_needit_historic_needit_data_1</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-07 19:48:25</sys_created_on>
+        <sys_id>4cd6d7b807b624108002f48f7c1ed0ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Historic NeedIt Data 1</sys_name>
+        <sys_package display_value="NeedIt 1" source="x_591587_needit">447b50e707ea20108002f48f7c1ed069</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt 1">447b50e707ea20108002f48f7c1ed069</sys_scope>
+        <sys_update_name>sys_transform_map_4cd6d7b807b624108002f48f7c1ed0ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-07 19:48:25</sys_updated_on>
+        <target_table>x_591587_needit_needit</target_table>
+    </sys_transform_map>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt 1">447b50e707ea20108002f48f7c1ed069</application>
+        <file_path/>
+        <instance_id>ce416853dbf2c4903050ac44d4961994</instance_id>
+        <instance_name>dev100326</instance_name>
+        <name>sys_transform_map_4cd6d7b807b624108002f48f7c1ed0ec</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_map"&gt;&lt;sys_transform_map action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;copy_empty_fields&gt;false&lt;/copy_empty_fields&gt;&lt;create_new_record_on_empty_coalesce_fields&gt;false&lt;/create_new_record_on_empty_coalesce_fields&gt;&lt;enforce_mandatory_fields&gt;No&lt;/enforce_mandatory_fields&gt;&lt;name&gt;Import Historic NeedIt Data 1&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;run_business_rules&gt;true&lt;/run_business_rules&gt;&lt;run_script&gt;false&lt;/run_script&gt;&lt;script&gt;&lt;![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]&gt;&lt;/script&gt;&lt;source_table&gt;x_591587_needit_historic_needit_data_1&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_map&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-03-07 19:48:25&lt;/sys_created_on&gt;&lt;sys_id&gt;4cd6d7b807b624108002f48f7c1ed0ec&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Import Historic NeedIt Data 1&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt 1" source="x_591587_needit"&gt;447b50e707ea20108002f48f7c1ed069&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt 1"&gt;447b50e707ea20108002f48f7c1ed069&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_map_4cd6d7b807b624108002f48f7c1ed0ec&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-03-07 19:48:25&lt;/sys_updated_on&gt;&lt;target_table&gt;x_591587_needit_needit&lt;/target_table&gt;&lt;/sys_transform_map&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1952480088</payload_hash>
+        <record_name>Import Historic NeedIt Data 1</record_name>
+        <reverted_from/>
+        <source>97dfb64807b6a0108002f48f7c1ed043</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-07 19:48:25</sys_created_on>
+        <sys_id>fa071bb807b624108002f48f7c1ed005</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1780e3bd53f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-07 19:48:25</sys_updated_on>
+        <type>Table Transform Map</type>
+        <update_guid>36071bb8bcb6241075db01cab6c87b05</update_guid>
+        <update_guid_history>36071bb8bcb6241075db01cab6c87b05:-1952480088</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-07 19:49:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_map">sys_transform_map</sys_db_object>
+        <sys_id>de0135df10204b948c4b57efeaf677f1</sys_id>
+        <sys_metadata>4cd6d7b807b624108002f48f7c1ed0ec</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Historic NeedIt Data 1</sys_name>
+        <sys_package display_value="NeedIt 1" source="x_591587_needit">447b50e707ea20108002f48f7c1ed069</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt 1">447b50e707ea20108002f48f7c1ed069</sys_scope>
+        <sys_scope_delete display_value="">33c412f29ad04ff7b41d625c2574a8b1</sys_scope_delete>
+        <sys_update_name>sys_transform_map_4cd6d7b807b624108002f48f7c1ed0ec</sys_update_name>
+        <sys_update_version display_value="sys_transform_map_4cd6d7b807b624108002f48f7c1ed0ec">fa071bb807b624108002f48f7c1ed005</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-07 19:49:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
